@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigerian Ludo Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-layout">
+        <div class="game-container">
+            <img src="./images/Ludo board.jpeg" alt="Ludo Board" class="ludo-board" id="board">
+            
+            <!-- Eleso Section (Green) -->
+            <div class="piece-container eleso" data-section="eleso">
+                <div class="character-piece" data-index="0"></div>
+                <div class="character-piece" data-index="1"></div>
+                <div class="character-piece" data-index="2"></div>
+                <div class="character-piece" data-index="3"></div>
+            </div>
+
+            <!-- Alaba Section (Red) -->
+            <div class="piece-container alaba" data-section="alaba">
+                <div class="character-piece" data-index="0"></div>
+                <div class="character-piece" data-index="1"></div>
+                <div class="character-piece" data-index="2"></div>
+                <div class="character-piece" data-index="3"></div>
+            </div>
+
+            <!-- Ewebe Section (Yellow) -->
+            <div class="piece-container ewebe" data-section="ewebe">
+                <div class="character-piece" data-index="0"></div>
+                <div class="character-piece" data-index="1"></div>
+                <div class="character-piece" data-index="2"></div>
+                <div class="character-piece" data-index="3"></div>
+            </div>
+
+            <!-- Eleran Section (Orange) -->
+            <div class="piece-container eleran" data-section="eleran">
+                <div class="character-piece" data-index="0"></div>
+                <div class="character-piece" data-index="1"></div>
+                <div class="character-piece" data-index="2"></div>
+                <div class="character-piece" data-index="3"></div>
+            </div>
+        </div>
+
+        <div class="game-controls">
+            <div id="turn-indicator"></div>
+            <div class="dice-container">
+                <div class="dice" id="dice1">1</div>
+                <div class="dice" id="dice2">1</div>
+            </div>
+            <button class="roll-button" id="roll-button">Roll Dice</button>
+        </div>
+    </div>
+
+    <!-- Audio elements -->
+    <audio id="roll-sound" src="./sounds/dice-roll.mp3" preload="auto"></audio>
+    <audio id="move-sound" src="./sounds/piece-move.mp3" preload="auto"></audio>
+    <audio id="capture-sound" src="./sounds/capture.mp3" preload="auto"></audio>
+    <audio id="win-sound" src="./sounds/win.mp3" preload="auto"></audio>
+    <audio id="turn-sound" src="./sounds/turn.mp3" preload="auto"></audio>
+    <audio id="count-sound" src="./sounds/count.mp3" preload="auto"></audio>
+    <audio id="valid-move-sound" src="./sounds/valid-move.mp3" preload="auto"></audio>
+    <audio id="invalid-move-sound" src="./sounds/invalid-move.mp3" preload="auto"></audio>
+    <audio id="piece-select-sound" src="./sounds/select.mp3" preload="auto"></audio>
+
+    <script src="index.js"></script>
+</body>
+</html>
