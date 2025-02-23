@@ -1,4 +1,7 @@
-:root {
+<div class="dice-container">
+    <div class="dice" id="dice1">Roll Dice</div>
+    <div class="dice" id="dice2">Roll Dice</div>
+</div>:root {
     --board-size: min(65vh, 65vw);
     --red-color: #FF0000;
     --green-color: #4CAF50;
